@@ -17,7 +17,12 @@
     .no-padding{
         padding-left: 0;
     }
+    
   }
   
 
-  
+  @media (max-width: 768px){
+    img.img-fluid.img-thumbnail.gallery_image_preview {
+        height: 250px !important;
+      }
+  }
