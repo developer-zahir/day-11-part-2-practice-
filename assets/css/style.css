@@ -20,7 +20,6 @@
   opacity: 1;
   visibility: visible;
 }
-/* .profile-image{
-  visibility: hidden;
-  pointer-events: none;
-} */
+img.img-fluid.img-thumbnail.gallery_image_preview {
+  height: 110px !important;
+}
