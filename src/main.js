@@ -60,7 +60,7 @@ function displayGalleryImages() {
   gallery_images.forEach((item, index) => {
     const gallery_image_url = URL.createObjectURL(item);
     content += `
-      <div class="col-2 p-1">
+      <div class="col-lg-2 col-md-3 col-sm-6 p-1">
         <div class="img-box position-relative d-flex justify-content-center align-items-center">
           <img class="img-fluid img-thumbnail gallery_image_preview" src="${gallery_image_url}" alt="" />
           <span onclick="delete_image(${index})" class="img-remove d-block position-absolute bg-danger text-white"><i class="bi bi-trash3-fill"></i></span>
