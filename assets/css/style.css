@@ -1,0 +1,26 @@
+.img-box {
+  overflow: hidden;
+}
+
+.img-remove {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.4s;
+  visibility: hidden;
+  opacity: 0;
+}
+.img-remove img:hover {
+  background: rgb(179, 8, 8) !important;
+}
+.img-box:hover .img-remove {
+  opacity: 1;
+  visibility: visible;
+}
+/* .profile-image{
+  visibility: hidden;
+  pointer-events: none;
+} */

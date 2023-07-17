@@ -1,0 +1,23 @@
+@media (max-width: 1199.98px) {
+    .btn_group {
+      flex-wrap: wrap;
+    }
+    .btn_group button {
+      width: 100% !important;
+    }
+  }
+  @media (max-width: 1000px) {
+    .container {
+      max-width: 100% !important;
+      padding: 0;
+    }
+    .row {
+      margin: 10px 0 !important;
+    }
+    .no-padding{
+        padding-left: 0;
+    }
+  }
+  
+
+  
