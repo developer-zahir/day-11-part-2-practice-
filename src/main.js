@@ -37,6 +37,7 @@ profile_input_field.onchange = (e) => {
     profile_image_box.innerHTML = ` <img class="img-fluid img-thumbnail profile_image_preview" src="${profile_image_url}" alt="" />`;
   }
 };
+// profile image delete option
 profile_image_box.nextElementSibling.onclick = (e) => {
   profile_input_field.value = "";
   profile_image_box.innerHTML = "";
@@ -60,13 +61,23 @@ function displayGalleryImages() {
   gallery_images.forEach((item, index) => {
     const gallery_image_url = URL.createObjectURL(item);
     content += `
-      <div class="col-lg-2 col-md-3 col-sm-6 p-1">
+      <div class="col-lg-3 col-md-2 col-sm-6 p-1">
         <div class="img-box position-relative d-flex justify-content-center align-items-center">
-          <img class="img-fluid img-thumbnail gallery_image_preview" src="${gallery_image_url}" alt="" />
+          <img class="img-fluid img-thumbnail gallery_image_preview w-100" src="${gallery_image_url}" alt="" />
           <span onclick="delete_image(${index})" class="img-remove d-block position-absolute bg-danger text-white"><i class="bi bi-trash3-fill"></i></span>
         </div>
       </div>
     `;
   });
   gallery_list.innerHTML = content;
+}
+
+
+// reset all 
+let reset = document.querySelector('.reset')
+reset.onclick = (e)=>{
+  user_form.reset();
+  gallery_images = [];
+  profile_image_box.innerHTML = "";
+  displayGalleryImages();
 }

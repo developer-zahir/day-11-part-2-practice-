@@ -1,3 +1,8 @@
+.container{
+  max-width: 1100px;
+}
+
+
 .img-box {
   overflow: hidden;
 }
@@ -21,5 +26,6 @@
   visibility: visible;
 }
 img.img-fluid.img-thumbnail.gallery_image_preview {
-  height: 110px !important;
+  height: 150px !important;
+  object-fit: cover;
 }
